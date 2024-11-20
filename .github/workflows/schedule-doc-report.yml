@@ -7,7 +7,7 @@ on:
 jobs:
   report:
     runs-on: ubuntu-20.04
-    if: github.repository == 'freeCodeCamp/devdocs'
+    if: github.repository == 'diginfra/devdocs'
     steps:
     - uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2.7.0
     - name: Set up Ruby
