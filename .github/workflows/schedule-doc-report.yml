@@ -15,4 +15,4 @@ jobs:
       with:
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Generate report
-      run: bundle exec thor updates:check --github-token ${{ secrets.DEVDOCS_BOT_PAT }} --upload
+      run: bundle exec thor updates:check --github-token ${{ secrets.GITHUB_TOKEN }} --upload
